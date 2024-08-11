@@ -711,6 +711,15 @@ section {
     border-radius: 3px;
     position: absolute;
     transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+} 
+
+.points.marked {
+    animation: glow 1s linear forwards;
+    animation-timeline: view();
+    -webkit-animation-timeline: view();
+    animation-range: entry 50% cover 20%;
+    -webkit-animation-range: entry 50% cover 20%;
+    animation-delay: calc(var(--i)*0.05s);
 }
 
 @keyframes glow {
@@ -722,15 +731,6 @@ section {
         background: var(--hover-color);
         box-shadow: var(--neon-box-shadow);
     }
-} 
-
-.points.marked {
-    animation: glow 0.04s linear forwards;
-    animation-timeline: view();
-    -webkit-animation-timeline: view();
-    animation-range: entry 50% cover 20%;
-    -webkit-animation-range: entry 50% cover 20%;
-    animation-delay: calc(var(--i)*0.05s);
 }
 
 .fillter-buttons {
