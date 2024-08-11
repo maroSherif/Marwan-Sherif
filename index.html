@@ -6,8 +6,11 @@
     <title>Marwan Sherif</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<main id="online">
+
     <header>
         <div class="logo"><span>M</span>arwan.</div>
         <ul class="navlist">
@@ -72,7 +75,7 @@
 
         <div class="home-image scroll-scale">
             <div class="img-box">
-                <img src="man.png" alt="">
+                <img src="img/man.png" alt="">
             </div>
 
             <div class="liquid-shape">
@@ -133,25 +136,25 @@
 
     <section id="about" class="about">
         <div class="img-about scroll-scale">
-            <img src="about-me-pic2.png" alt="">
+            <img src="img/about-me-pic2.png" alt="">
             <div class="info-about1">
-                <span>10+</span>
+                <span>2+</span>
                 <p>Years of Experience</p>
             </div>
             <div class="info-about2">
-                <span>150+</span>
+                <span>5+</span>
                 <p>Projects Complete</p>
             </div>
             <div class="info-about3">
-                <span>200+</span>
+                <span>10+</span>
                 <p>Happy Clients</p>
             </div>
         </div>
             <div class="about-content scroll-scale">
-                <span>Let me intrduce myself</span>
+                <span>Let me intorduce myself</span>
                 <h2>About Me</h2>
                 <h3>A Story of good</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet veritatis laboriosam exercitationem! Veritatis, ipsum illo laudantium debitis nihil commodi repellat. Dicta, temporibus exercitationem? Libero dolore exercitationem laboriosam in nulla quos.</p>
+                <p>I am a senior web frontend developer. I can build professional websites using frontend programming languages. I have learned HTML - CSS - JS. I can help you by creating a website to grow your project. Do not hesitate and contact me</p>
 
                 <div class="btn-box">
                     <a href="#" class="btn">Read More!</a>
@@ -167,27 +170,27 @@
 
         <div class="section-services scroll-bottom">
             <div class="service-box">
-                <i class="bx bxs-layer service-icon"></i>
-                <h3>Graphic Designer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam placeat minus molestias adipisci ea. Mollitia iure amet ipsum perferendis?</p>
-                <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <i class="bx bxs-layer service-icon"></i>
+                <i class="fa-solid fa-globe service-icon"></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam placeat minus molestias adipisci ea. Mollitia iure amet ipsum perferendis?</p>
+                <p>I can build websites using frontend programming lanuages. <br> HTML5 - CSS3 - JS</p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
                 </div>
             </div>
 
             <div class="service-box">
-                <i class="bx bx-code-alt service-icon"></i>
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam placeat minus molestias adipisci ea. Mollitia iure amet ipsum perferendis?</p>
+                <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                <h3>Responsive Design</h3>
+                <p>I can build Websites that open in mobiles, tablets and all kinds of screens.</p>
+                <div class="btn-box service-btn">
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+                <h3>Fix and Update Websites</h3>
+                <p>I can fix, update and add new features to old websites to improve its interfaces.</p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
                 </div>
@@ -237,11 +240,11 @@
 
                 <div class="skill-bar">
                     <div class="info">
-                        <p>Python</p>
+                        <p>API</p>
                         <p>67%</p>
                     </div>
                     <div class="bar">
-                        <span class="python"></span>
+                        <span class="api"></span>
                     </div>
                 </div>
             </div>
@@ -292,19 +295,18 @@
 
         <div class="container">
             <div class="fillter-buttons scroll-scale">
-                <button class="btn" data-filter="all">All</button>
-                <button class="btn" data-filter=".web">Web</button>
-                <button class="btn" data-filter=".app">App</button>
-                <button class="btn" data-filter=".wdesign">Web Design</button>
+                <button class="button" data-filter="all">All</button>
+                <button class="button" data-filter=".web">Website</button>
+                <button class="button" data-filter=".fix-update">Fix & Update</button>
             </div>
 
             <div class="portfolio-gallery scroll-bottom">
                 <div class="port-box mix web">
                     <div class="port-image">
-                        <img src="1.jpg" alt="">
+                        <img src="img/1.jpg" alt="">
                     </div>
                     <div class="port-content">
-                        <h3>Graphic Design</h3>
+                        <h3>Website</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi asperiores delectus officiis laborum ex temporibus distinctio quod rerum tempora?
                         </p>
@@ -312,38 +314,12 @@
                     </div>
                 </div>
 
-                <div class="port-box mix app">
+                <div class="port-box mix fix-update">
                     <div class="port-image">
-                        <img src="2.jpg" alt="">
+                        <img src="img/2.jpg" alt="">
                     </div>
                     <div class="port-content">
-                        <h3>Graphic Design</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi asperiores delectus officiis laborum ex temporibus distinctio quod rerum tempora?
-                        </p>
-                        <a href="#"><i class="bx bx-link-external"></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix wdesign">
-                    <div class="port-image">
-                        <img src="3.jpg" alt="">
-                    </div>
-                    <div class="port-content">
-                        <h3>Graphic Design</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi asperiores delectus officiis laborum ex temporibus distinctio quod rerum tempora?
-                        </p>
-                        <a href="#"><i class="bx bx-link-external"></i></a>
-                    </div>
-                </div>
-
-                <div class="port-box mix app">
-                    <div class="port-image">
-                        <img src="4.jpg" alt="">
-                    </div>
-                    <div class="port-content">
-                        <h3>Graphic Design</h3>
+                        <h3>Website</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi asperiores delectus officiis laborum ex temporibus distinctio quod rerum tempora?
                         </p>
@@ -353,10 +329,10 @@
 
                 <div class="port-box mix web">
                     <div class="port-image">
-                        <img src="5.jpg" alt="">
+                        <img src="img/3.jpg" alt="">
                     </div>
                     <div class="port-content">
-                        <h3>Graphic Design</h3>
+                        <h3>Website</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi asperiores delectus officiis laborum ex temporibus distinctio quod rerum tempora?
                         </p>
@@ -364,12 +340,38 @@
                     </div>
                 </div>
 
-                <div class="port-box mix wdesign">
+                <div class="port-box mix web">
                     <div class="port-image">
-                        <img src="6.jpg" alt="">
+                        <img src="img/4.jpg" alt="">
                     </div>
                     <div class="port-content">
-                        <h3>Graphic Design</h3>
+                        <h3>Website</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi asperiores delectus officiis laborum ex temporibus distinctio quod rerum tempora?
+                        </p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Website</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi asperiores delectus officiis laborum ex temporibus distinctio quod rerum tempora?
+                        </p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix fix-update">
+                    <div class="port-image">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Website</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi asperiores delectus officiis laborum ex temporibus distinctio quod rerum tempora?
                         </p>
@@ -383,9 +385,9 @@
     <section id="contact" class="contact">
         <div class="main-text scroll-scale">
             <span>Ask me a question</span>
-            <h2><span style="font-size: var(--normal-font); font-weight: 700; text-transform: none;">Contact</span> Me</h2>
+            <h2><span>Contact</span> Me</h2>
         </div>
-        <form action="https://formsubmit.co/82c555cbf380b2ff95d72e9d71f2edd4" method="post" class="scroll-bottom">
+        <form action="https://formsubmit.co/82c555cbf380b2ff95d72e9d71f2edd4" method="post" class="scroll-bottom" autocomplete="off">
             <div class="input-container">
                 <input type="text" name="name" required autocomplete="on" autofocus inputmode="">
                 <label class="placeholder">Name</label>
@@ -416,7 +418,12 @@
         <p class="scroll-scale">Copyright &copy; 2024 by <b style="color: var(--hover-color);">Marwan Sherif</b> || All Right Reserved.</p>
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
     </footer>
-      
+
+</main>
+
+<main id="offline">
+
+</main>
     <script src="script.js"></script>
     <script src="mixitup.min.js"></script>
 </body>

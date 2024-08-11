@@ -35,8 +35,8 @@
     width: .5rem;
 }
 
-::-webkit-track {
-    background: var(--second-bg-color);
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -52,7 +52,7 @@ body {
 
 section {
     /* scroll-snap-align: center; */
-    min-height: 100vh;
+    min-height: 100svh;
 }
 
 header {
@@ -125,7 +125,7 @@ section {
 }
 
 .home {
-    min-height: 100vh;
+    min-height: 100svh;
     height: 100%;
     width: 100%;
     display: grid;
@@ -596,37 +596,37 @@ section {
 .skill-bar .bar .html {
     width: 100%;
     animation: html 2s both;
-    /* animation-timeline: view();
+    animation-timeline: view();
     -webkit-animation-timeline: view();
     animation-range: entry 50% cover 50%;
-    -webkit-animation-range: entry 50% cover 50%; */
+    -webkit-animation-range: entry 50% cover 50%;
 }
 
 .skill-bar .bar .css {
     width: 98%;
     animation: css 3s both;
-    /* animation-timeline: view();
+    animation-timeline: view();
     -webkit-animation-timeline: view();
     animation-range: entry 50% cover 50%;
-    -webkit-animation-range: entry 50% cover 50%; */
+    -webkit-animation-range: entry 50% cover 50%;
 }
 
 .skill-bar .bar .javascript {
     width: 79%;
     animation: javascript 4s both;
-    /* animation-timeline: view();
+    animation-timeline: view();
     -webkit-animation-timeline: view();
     animation-range: entry 50% cover 50%;
-    -webkit-animation-range: entry 50% cover 50%; */
+    -webkit-animation-range: entry 50% cover 50%;
 }
 
-.skill-bar .bar .python {
+.skill-bar .bar .api {
     width: 67%;
-    animation: python 5s both;
-    /* animation-timeline: view();
+    animation: api 5s both;
+    animation-timeline: view();
     -webkit-animation-timeline: view();
     animation-range: entry 50% cover 50%;
-    -webkit-animation-range: entry 50% cover 50%; */
+    -webkit-animation-range: entry 50% cover 50%;
 }
 
 @keyframes html {
@@ -656,7 +656,7 @@ section {
     }
 }
 
-@keyframes python {
+@keyframes api {
     0% {
         width: 0%;
     }
@@ -726,10 +726,10 @@ section {
 
 .points.marked {
     animation: glow 0.04s linear forwards;
-    /* animation-timeline: view();
+    animation-timeline: view();
     -webkit-animation-timeline: view();
     animation-range: entry 50% cover 20%;
-    -webkit-animation-range: entry 50% cover 20%; */
+    -webkit-animation-range: entry 50% cover 20%;
     animation-delay: calc(var(--i)*0.05s);
 }
 
@@ -738,7 +738,7 @@ section {
     text-align: center;
 }
 
-.fillter-buttons .btn {
+.fillter-buttons .button {
     background: none;
     outline: none;
     border: none;
@@ -750,7 +750,7 @@ section {
     color: var(--text-color);
 }
 
-.fillter-buttons .btn:hover {
+.fillter-buttons .button:hover {
     color: var(--hover-color);
 }
 
@@ -870,6 +870,13 @@ section {
     font-size: 14px;
     text-transform: capitalize;
     outline: var(--hover-color) solid;
+    caret-color: white;
+}
+
+.contact form input::selection,
+.contact form textarea::selection {
+    background-color: dodgerblue;
+    color: #fff;
 }
 
 .placeholder {
@@ -881,12 +888,17 @@ section {
     pointer-events: none;
     z-index: 999;
     transition: 0.3s;
+    background-color: var(--second-bg-color);
 }
 
 input:focus + .placeholder,
 textarea:focus + .placeholder,
+input:user-valid + .placeholder,
+textarea:user-valid + .placeholder,
 input:user-invalid + .placeholder,
-textarea:user-invalid + .placeholder {
+textarea:user-invalid + .placeholder,
+textarea:valid + .placeholder 
+textarea:valid + .placeholder {
     top: -.6rem;
     color: var(--hover-color);
     background-color: var(--second-bg-color);
@@ -903,8 +915,11 @@ input:-webkit-autofill:focus {
 } 
 
 .contact form textarea {
-    resize: none;
+    resize: vertical;
+    transition: .5s;
     text-transform: none;
+    min-height: 185px;
+    max-height: 200px;
 }
 
 .contact form input[type=email] {
@@ -957,13 +972,13 @@ footer a i {
 .scroll-bottom {
     opacity: 0;
     transform: translateY(300px);
-    transition: 3s;
+    transition: 2s;
 }
 
 .scroll-top {
     opacity: 0;
     transform: translateY(-300px);
-    transition: 3s;
+    transition: 2s;
 }
 
 .show-items {
@@ -1032,12 +1047,13 @@ footer a i {
 
     .navlist a {
         display: block;
-        padding-bottom: 1rem;
+        padding: 1rem 0;
         font-size: 1rem;
+        transition: all .3s;
     }
 
     .navlist a:hover {
-        background-color: var(--second-bg-color);
+        transform: translateX(-10px);
     }
 
     .navlist.open {
@@ -1084,7 +1100,7 @@ footer a i {
         font-size: .75rem;
     }
 
-    .fillter-buttons {
+    .fillter-buttons .button {
         font-size: .8rem;
     }
 
